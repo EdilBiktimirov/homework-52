@@ -7,22 +7,24 @@ interface cardProps extends React.PropsWithChildren {
 
 const CardView: React.FC<cardProps> = props => {
 
-  const cardClass = 'card rank-' + props.rank + ' ' + props.suit;
+  const cardClass = 'card rank-' + props.rank.toLowerCase() + ' ' + props.suit;
+
+  let suitSymbol: string = '';
 
   if (props.suit === 'diams') {
-    props.suit = '♦';
+   suitSymbol = '♦';
   } else if (props.suit === 'hearts') {
-    props.suit = '♥';
+    suitSymbol = '♥';
   } else if (props.suit === 'clubs') {
-    props.suit = '♣';
+    suitSymbol = '♣';
   } else if (props.suit === 'spades') {
-    props.suit = '♠';
+    suitSymbol = '♠';
   }
 
   return (
     <span className={cardClass}>
     <span className="rank">{props.rank}</span>
-    <span className="suit">{props.suit}</span>
+    <span className="suit">{suitSymbol}</span>
 </span>
   );
 }
