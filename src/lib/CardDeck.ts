@@ -7,7 +7,6 @@ class CardDeck {
   cardsArray: Card[];
 
   constructor() {
-
     this.cardsArray = [];
 
     for (let i = 0; i < suits.length; i++) {
@@ -16,7 +15,6 @@ class CardDeck {
         this.cardsArray.push(NewCard);
       }
     }
-
   }
 
   getCard(): Card {
@@ -33,10 +31,8 @@ class CardDeck {
     for (let i = 0; i < howMany; i++) {
       data.push(this.getCard());
     }
-
     return data;
   }
-
 }
 
 export default CardDeck;

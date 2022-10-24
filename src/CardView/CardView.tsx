@@ -6,7 +6,6 @@ interface cardProps extends React.PropsWithChildren {
 }
 
 const CardView: React.FC<cardProps> = props => {
-
   const cardClass = 'card rank-' + props.rank.toLowerCase() + ' ' + props.suit;
 
   let suitSymbol: string = '';
