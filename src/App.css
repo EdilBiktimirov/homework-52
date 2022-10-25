@@ -1,0 +1,32 @@
+body{
+    background: #009900;
+    padding: 10px;
+}
+
+.cardsDiv {
+    text-align: center;
+}
+
+.result {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mainBtn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border-color: #3498db;
+    color: #000;
+    box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 #fff;
+    transition: all 150ms ease-in-out;
+}
+
+.mainBtn:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: #000;
+}
+
+
